@@ -41,7 +41,7 @@ Donc je renseigne ce qui suit dans mon navigateur
 
 -------------------
 
-# utilisation des variables d'environnements
+# Utilisation des variables d'environnements
 
 ````
 docker run --name web-color -e APP_COLOR="red" -d -p 8080:8080 kodekloud/webapp-color
