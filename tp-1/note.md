@@ -1,4 +1,4 @@
-# Installation de la stack vagrant docker
+# Installation de la stack Vagrant docker
 
 1- Avoir une machine virtuelle sur la machine ou installer une machine virtuelle (dans mon cas VirtualBox)
 
@@ -11,7 +11,7 @@ https://github.com/diranetafen/cursus-devops
 
 --------------
 
-# Vérifier si docker est bien installé sur la machine
+# Vérifier si Docker est bien installé sur la machine
 
 docker --version
 docker run hello-world
@@ -27,7 +27,7 @@ docker run --name nginx -d -p 80:80 nginx
 docker run --name nginx -dp 80:80 nginx
 ````
 
-# Pour accéder à l'application dans le conteneur, entrez l'adresse IP de la machine dans le navigateur suivi suivi du port 80 (:80)
+# Pour accéder à l'application dans le conteneur, entrez l'adresse IP de la machine dans le navigateur suivi du port 80 (:80)
 
 Utilisez cette commande pour afficher votre IP:
 ```
