@@ -17,4 +17,4 @@
 8- installer l'outil de ping: apt-get update && apt-get install && apt-get install iputils-ping
 
 9- tester si ubuntu1 et ubuntu2 sont en réseau
-   - still in the ubuntu1 container type: ping ubuntu2
+   - rester dans le conteneur ubuntu1 et taper la commande: ping ubuntu2
