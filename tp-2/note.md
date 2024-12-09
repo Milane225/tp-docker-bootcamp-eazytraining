@@ -11,7 +11,7 @@
 2- Exécutez l'image et testez
 
    - docker build -t webapp:v1 .
-   - vérifier que l'image a été créée : images docker
+   - vérifier que l'image a été créée : docker images
    - démarrer un conteneur : docker run --name webapp -d -p 80:80 webapp:v1
    - Accédez au navigateur pour accéder à l'application avec l'adresse de la machine suivie du port 80 : 192.168.56.104:80
 
