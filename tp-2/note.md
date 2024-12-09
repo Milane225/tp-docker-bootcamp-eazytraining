@@ -32,3 +32,7 @@
 3- Vérification
    - Accédez à votre compte dockerhub, puis aux référentiels
    - Vérifiez le nom de l'image que vous venez de pousser
+
+# NB :
+
+La version v2 de Dockerfile permet de recupérer directement le code dans le Dockerfile en faisant un git clone
