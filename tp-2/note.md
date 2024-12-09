@@ -18,26 +18,17 @@
 
 -----------------------
 
-# Managing the image on dockerhub
+# Gestion de l'image sur dockerhub
 
-1- Log in to your dockerhub account
-   - username: eazytraining
-   - password: eazytraining_dockerhub_password
-   - to login in dockerhub: docker login
+1- Connectez-vous à votre compte dockerhub
+   - username: votre_nom_utilisateur
+   - password: votre_mot_de_passe
+   - pour se connecter à dockerhub: docker login
 
-2- Push the image
-   - Tag image: docker tag id_image eazytraining/webapp:v1
-   - Push image: docker push eazytraining/webapp:v1
+2- Pousser l'image
+   - Tager l'image: docker tag id_image mon_nom/webapp:v1
+   - Faire un push de l'image: docker push mon_nom/webapp:v1
 
-3- Checking
-   - Go to your dockerhub account, then to repositories
-   - Check the name of the image you've just pushed
-
--------------------------
-
-
-# Automatically retrieve code from github
-
-   1- copy the contents of the updated Dockerfile to the 02_lab-2/ directory of this repository
-   2- build the image: docker build -t webapp:v2 .
-   3- create the container with the new image:  dock
+3- Vérification
+   - Accédez à votre compte dockerhub, puis aux référentiels
+   - Vérifiez le nom de l'image que vous venez de pousser
