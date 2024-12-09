@@ -21,7 +21,6 @@
 ````
    3- Vérifier:
 ````
-````
    docker ps
 ````
    4- Tester dans le navigateur:
