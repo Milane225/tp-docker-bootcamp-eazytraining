@@ -1,12 +1,20 @@
 # Créer un type de volume
 
+````
   docker volume create --name share
+````
+````
   docker volume ls
+````
 
 # Créez deux conteneurs ubuntu (ubuntu1 et ubuntu2) et montez le volume créé dans le répertoire /tmp de chaque conteneur ubuntu.
- 
+
+ ````
   docker run -it --name ubuntu1 -v share:/tmp -d ubuntu /bin/bash
+````
+````
   docker run -it --name ubuntu2 -v share:/tmp -d ubuntu /bin/bash
+````
 
 # Créez un fichier toto.txt dans le répertoire /tmp du conteneur ubuntu1 et vérifiez qu'il est présent dans le répertoire /tmp du conteneur ubuntu2.
 
