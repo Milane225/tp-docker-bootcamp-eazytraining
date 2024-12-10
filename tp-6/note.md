@@ -1,15 +1,35 @@
-# Cluster installation with one master and one node
+# Installation en cluster avec un master et un nœud
 
-  - Initialize the cluster on master: docker swarm init --advertise-addr MASTER_IP_ADRESSE
-  - Add the worker to the cluster by typing this command from the worker:  docker swarm join --token TOKEN_ID IP_ADRESSE:2377 
-  - Verify on master: docker node ls
+  - Initialiser le cluster sur le master:
+````
+    docker swarm init --advertise-addr MASTER_IP_ADRESSE
+````
+  - Ajoutez le nœud au cluster en tapant cette commande à partir du nœud:
+````
+    docker swarm join --token TOKEN_ID IP_ADRESSE:2377
+````
+  - Vérifier sur le master:
+````
+    docker node ls
+````
 
-# deploy the voting management application
+# déployer l'application de gestion des votes
 
-  - retrieve code: cd example-voting-app
-  - launch stack creation on master: docker stack deploy -c docker-stack.yml vote-stack
-  - verify: docker stack ls
-            docker stack ps vote-stack
-
-  - Test application on browser: vote: 192.168.99.10:5000
-                                 result: 192.168.99.10:5001
+  - récupérer le code:
+````
+    cd example-voting-app
+````
+  - lancer la stack sur le master:
+````
+    docker stack deploy -c docker-stack.yml vote-stack
+````
+  - Vérifier:
+````
+    docker stack ls
+````
+````
+    docker stack ps vote-stack
+````
+  - Tester l'application sur le navigateur:
+    vote: 192.168.99.10:5000
+    result: 192.168.99.10:5001
